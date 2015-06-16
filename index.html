@@ -5,13 +5,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
+				// selecting an element by tag name //
+				$("h1").fadeOut(2000);
 				// selecting an element by ID //
 				$("#blueSquare").fadeOut(2000);
 				$("#blueSquare").fadeIn(1000);
 				// selecting an element by class //
 				$(".hello").slideUp(2000);
-				// selecting an element by tag name //
-				$("h1").slideDown();
 			
 			//click event//
 			$("#greenSquare").click(function(){
@@ -39,14 +39,14 @@
 		</style>
 </head>
 		<body>
+			<h1>JQuery CheatSheet</h1>
+
 			<div id="blueSquare"></div>
 
-			<h1> JQuery CheatSheet </h1>
-			<p class="hello"> hello hello hello hello hello hello </p>
-			<p class="hello"> hello hello hello hello hello hello </p>
-
 			<div id="greenSquare"></div>
-
+			
+			<p class="hello"> hello hello hello hello hello hello </p>
+			<p class="hello"> hello hello hello hello hello hello </p
 
 		</body>
 
