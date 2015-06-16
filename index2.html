@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Website</title>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        window.onload = function() {$("#centering-wrapper").hide().fadeIn(5000);};        
+      //$("#centering-wrapper").fadeIn(2000);
+      //$("#centering-wrapper").on("click", function() {
+      //$(this).toggleClass("red", );
+      //}); 
+      });
+      $(document).ready(function(){
+        $("#red").hide();
+        $("#centering-wrapper").show();
+ 
+      $("#centering-wrapper").click(function(){
+        $("#red").slideToggle();
+        return false;
+      });
+    });
+    </script>
+
+    <style>
+    @font-face {
+        font-family: autumn;
+        src: url(font/font.otf);
+    }
+
+    .navBar {
+        width: 980px;
+        padding: 5px;
+        font-family: autumn;
+    }
+
+    #centering-wrapper {
+        width: 980px;
+        height: 500px;
+    }
+    div {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    img {
+      position: relative;
+      width: 300px;
+      height: 300px;
+    }
+
+    #red {
+      font-family: autumn;
+    }
+
+    ul {
+      font-size: 10px;
+    }
+
+    p {
+      font-size: 10px;
+    }
+    </style>
+
+  </head>
+    <body>
+      <div class="navBar"><h2>JENNY MIN CERAMICS</a></h2></div>
+        <div id="centering-wrapper">
+          <div>
+              <img class="image" src="images/bumpycup.jpg"/>
+          </div>
+          <div>
+              <img class="image" src="images/blue_bowl.jpg"/>
+          </div>
+          <div>
+              <img class="image" src="images/cup.jpg"/>
+          </div>
+
+      <br>
+        
+        <div id="red"><h6><u>Product Description</u></h6>
+          <p>Latte Cup</p>
+           <p>For coffee drinkers who like to keep their milky beverage snug.</p>
+            <ul>
+              <li>Dimensions  (w x h)</li>
+              <li> Imperial  3 x 3.3" </li>
+              <li> Metric  7.5 x 8.5cm </li>
+            </ul>
+        </div>
+      </div>
+    </body>
+</html>
